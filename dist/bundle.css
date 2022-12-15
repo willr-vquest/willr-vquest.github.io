@@ -7,6 +7,85 @@ body{
 
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0);
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    padding: 0px 10px;
+}
+
+.button {
+    text-align: center;
+    display: inline;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 42%;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0.5px solid #222;
+    background: transparent;
+    color: #222;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.flexbox-container {
+    /* display: flex;
+    justify-content: center; */
+    display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: stretch;
+	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+.flexbox-item {
+    width: 30%;
+    margin: 0 1em 2em 1em;
+    box-shadow: rgba(50, 50, 93, 0.9) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #f2f3f1;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 30vh;
+    z-index: 1;
+}
+
+#model-page {
+    height: 70vh;
+    width: 1200px;
+    margin-left: 325px;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 14px 16px 10px rgba(0, 0, 0, 0.1), 0 12px 14px 10px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
 .header{
     text-align: center;
 }
@@ -14,11 +93,11 @@ body{
 .header h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 60px;
-    text-shadow: 3px 2px rgb(0, 0, 0);
-    color: rgba(121, 177, 142);
+    text-shadow: 3px 2px rgb(255, 255, 255);
+    color: #217867;
 }
 
-/* .canvas {
+.flexbox-container .flexbox-item .canvas {
     position:absolute;
     left:50%;
     top:50%;
@@ -26,26 +105,20 @@ body{
     margin-top: 3%;
 }
 
-#file-input {
-    z-index: 1;
-    position: relative;
-    left:52%;
-    transform: translateX(-52%);
-    font-size: 15px;
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: #f2f3f1;
 }
-#three-canvas{
-    position: relative;
-    height: 100% !important;
-    width: 100% !important;
-    z-index: 10;
-
-} */
   
 
 nav {
     width: 100%;
     height: 90px;
     background-color: #fff;
+    
 }
 
 nav p {
@@ -54,11 +127,13 @@ nav p {
     font-size: 24px;
     line-height: 50px;
     float: left;
-    padding: 0px 20px;
+    padding: 0px 10px;
+    
 }
 
 nav ul {
     float: left;
+    
 }
 
 nav ul li {
@@ -101,3 +176,4 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
     background-color: #f3f3f3;
 }
+
